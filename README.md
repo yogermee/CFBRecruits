@@ -1,4 +1,4 @@
-# CFBRecruits for Python 2.7
+# CFBRecruits (Python 2.7)
 
 *Making NCAA football recruiting data as easily accessible as possible*
 
