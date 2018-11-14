@@ -2,7 +2,7 @@
 
 *Making NCAA football recruiting data as easily accessible as possible.*
 
-## Table of Contents
+# Table of Contents
 
 1. Introduction
 2. Installation
@@ -14,7 +14,7 @@
    - Methods
 4. Appendix
 
-### 1. Introduction
+## 1. Introduction
 
 The CFBRecruits module was created to gain access to NCAA football recruit data without having to pay for 3rd party API access (which is often sparse, inconsistent, or simply non-existant). Currently, the two largest websites tracking college football recruits are 247sports.com and Rivals.com. Each website ranks both overall university recruiting classes and individual recruits on a state- and nation-wide basis. The CFBRecruits module utilizes Selenium 2.0 to effecitively navigate ever-shifting DOM elements to deliver the webpage's data to your machine in a readable and easily iterable fashion.
 
@@ -24,17 +24,17 @@ The CFBRecruits module was created to gain access to NCAA football recruit data 
 2. Average university recruit rating by year
 3. The Top 50 recruiting classes by university, by year
 
-### 2. Installation
+## 2. Installation
 
 The CFBRecruit module relies heavily on Selenium 2.0, and specifically Selenium's Google Chrome WebDriver. Later in these instructions we'll touch on all aspects of WebDrivers, but for now, you'll want to start by simply installing Selenium on your machine. (***NOTE:*** *While I'll cover the high-level details below, please be sure to brush-up on [Selenium's documentation--especially if you're a Windows user for proper instructions!](https://selenium-python.readthedocs.io/installation.html)*)
 
-#### First - Install Selenium
+### First - Install Selenium
 
 1. Open your Mac's terminal
 2. Copy and paste: `pip install selenium`
 3. Press enter/return
 
-#### Second - Install Selenium Google Chrome WebDriver
+### Second - Install Selenium Google Chrome WebDriver
 
 1. [Click Here](https://sites.google.com/a/chromium.org/chromedriver/downloads) to navigate to the WebDriver download page
 2. Click to download the "Latest Release" of the Selenium Google Chrome WebDriver
@@ -43,9 +43,9 @@ The CFBRecruit module relies heavily on Selenium 2.0, and specifically Selenium'
 5. Open the .zip file
 6. Move the "chromedriver" file to your desired folder/location--you'll need this exact file path later.
 
-#### Third - Install CFBRecruits
+### Third - Install CFBRecruits
 
-#### But first, a brief word on WebDrivers:
+### But first, a brief word on WebDrivers:
 
 If you're familiar with Selenium, you may already know that you can use WebDrivers for basically any browser (Firefox, Chrome, Opera, etc.), and perhaps, Google Chrome isn't your browser of choice (which is what the CFBRecruits module utilizes). What you can do is [visit Selenium's WebDriver download page](https://selenium-python.readthedocs.io/installation.html#drivers), download the WebDriver of your choice, and then follow steps 3-6 from "Second - Install Selenium Google Chrome WebDriver" but for the WebDriver of your choice.
 
@@ -62,13 +62,13 @@ Once you've done this--and this goes for any WebDriver--be sure to capture the e
 
 *Note: If you choose to use a different browser WebDriver, you'll need to chose the proper WebDriver object. For instance, if you'd prefer to use Firefox, instead of "`webdriver.Chrome()`" you'll want to change each reference to a specific WebDriver to "`webdriver.Firefox()`".
 
-### 3. Using CFBRecruits
+## 3. Using CFBRecruits
 
-#### Classes
+### Classes
 
 There are currently two classes in CFBRecruits--one for 247Sports.com and one for Rivals.com--named `Scrape247()` and `ScrapeRivals()`, respectively. They are both children of the `Scraper()` parent class.
 
-##### Creating a Class instance
+#### Creating a Class instance
 
 In order to access all of the methods within each class, you'll first need to create an instance of the class for the website in question. For instance:
 
@@ -76,7 +76,7 @@ In order to access all of the methods within each class, you'll first need to cr
 
 Once you've created your class instance, you're now ready to begin utilizing the methods within each class.
 
-#### Utilizing CFBRecruit's methods
+### Utilizing CFBRecruit's methods
 
 Currently, each website's class has the following methods:
 
