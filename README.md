@@ -63,7 +63,7 @@ Once you've created your class instance, you're now ready to begin utilizing the
 
 Currently, each website's class has the following methods:
 
-1. `getClassURL(team, year)` - Including the proper team name string (please reference the appendix for all proper team name strings) and the desired year, this function will enable you to generate the proper URL string to pass into methods to then be scraped without having to manually locate it on the website, copy it, and then paste it into any other methods (which, will also work, if you so desire).
+1. `getClassURL(team, year)` - Including the proper team name string (please reference the appendix for all proper team name strings) and the desired year, this function will enable you to generate the proper URL string to pass into methods to then be scraped without having to manually locate it on the website, copy it, and then paste it into any other methods (which, will also work in the `getClassData(url)` method, if you so desire).
 
 *Example:*
 
