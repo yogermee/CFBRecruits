@@ -7,8 +7,8 @@
 1. Introduction
 2. Installation
 3. Using CFBRecruits
-  1. Classes
-  2. Methods
+_Classes
+_Methods
 
 ### 1. Introduction
 
