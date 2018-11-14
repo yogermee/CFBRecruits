@@ -91,5 +91,19 @@ print class_data
 ```
 
 3. `buildClassData(data)`
+
+*Example:*
+
+```
+site = ScrapeRivals()
+url = site.getClassURL('tamu', 2012)
+class_data = site.getClassData(url)
+final_class_data = site.buildClassData(class_data)
+
+print final_class_data
+...
+[{'Status': u'SIGNED', 'Rating': u'6', 'Name': u'Thomas Johnson', 'Weight': u'180', 'Height': u'6\'0"', 'Location': u'Dallas, TX', 'Position': u'WR', 'Commit Date': u'2/2/12'}, {'Status': u'SIGNED', 'Rating': u'5.6', 'Name': u'Edmund Ray', 'Weight': u'290', 'Height': u'6\'5"', 'Location': u'St. Louis, MO', 'Position': u'DT', 'Commit Date': u'2/1/12'}, {'Status': u'SIGNED', 'Rating': u'5.7', 'Name': u'Polo Manukainiu', 'Weight': u'256', 'Height': u'6\'6"', 'Location': u'Euless, TX', 'Position': u'DE', 'Commit Date': u'1/30/12'}, {'Status': u'SIGNED', 'Rating': u'5.8', 'Name': u'Edward Pope', 'Weight': u'170', 'Height': u'6\'3"', 'Location': u'Carthage, TX', 'Position': u'ATH', 'Commit Date': u'1/28/12'}, {'Status': u'SIGNED', 'Rating': u'5.5', 'Name': u'Sabian Holmes', 'Weight': u'175', 'Height': u'5\'11"', 'Location': u'Southlake, TX', 'Position': u'WR', 'Commit Date': u'1/9/12'}, {'Status': u'SIGNED', 'Rating': u'5.7', 'Name': u'Derel Walker', 'Weight': u'175', 'Height': u'6\'2"', 'Location': u'Athens, TX', 'Position': u'WR', 'Commit Date': u'12/23/11'}, {'Status': u'SIGNED', 'Rating': u'5.7', 'Name': u'Otis Jacobs', 'Weight': u'180', 'Height': u'6\'1"', 'Location': u'Perkinston, MS', 'Position': u'DB', 'Commit Date': u'12/22/11'}, {'Status': u'SIGNED', 'Rating': u'5.7', 'Name': u'Germain Ifedi', 'Weight': u'304', 'Height': u'6\'5"', 'Location': u'Houston, TX', 'Position': u'OL', 'Commit Date': u'10/26/11'}, {'Status': u'SIGNED', 'Rating': u'5.6', 'Name': u'Julien Obioha', 'Weight': u'255', 'Height': u'6\'4"', 'Location': u'New Orleans, LA', 'Position': u'DE', 'Commit Date': u'7/29/11'}, {'Status': u'SIGNED', 'Rating': u'5.6', 'Name': u'Kenneth Marshall', 'Weight': u'191', 'Height': u'6\'0"', 'Location': u'South Houston, TX', 'Position': u'DB', 'Commit Date': u'6/14/11'}, {'Status': u'SIGNED', 'Rating': u'6.1', 'Name': u'Trey Williams', 'Weight': u'175', 'Height': u'5\'8"', 'Location': u'Spring, TX', 'Position': u'RB', 'Commit Date': u'4/17/11'}, {'Status': u'SIGNED', 'Rating': u'5.8', 'Name': u'Matt Davis', 'Weight': u'202', 'Height': u'6\'2"', 'Location': u'Houston, TX', 'Position': u'QB', 'Commit Date': u'4/17/11'}, {'Status': u'SIGNED', 'Rating': u'5.8', 'Name': u'Mike Matthews', 'Weight': u'260', 'Height': u'6\'3"', 'Location': u'Missouri City, TX', 'Position': u'OL', 'Commit Date': u'2/24/11'}, {'Status': u'SIGNED', 'Rating': u'5.6', 'Name': u'Alonzo Williams', 'Weight': u'248', 'Height': u'6\'4"', 'Location': u'Long Beach, CA', 'Position': u'DE', 'Commit Date': u'2/24/11'}, {'Status': u'SIGNED', 'Rating': u'5.7', 'Name': u'Kimo Tipoti', 'Weight': u'330', 'Height': u'6\'3"', 'Location': u'Hurst, TX', 'Position': u'OL', 'Commit Date': u'2/21/11'}, {'Status': u'SIGNED', 'Rating': u'5.8', 'Name': u'Jordan Richmond', 'Weight': u'220', 'Height': u'6\'1"', 'Location': u'Denton, TX', 'Position': u'LB', 'Commit Date': u'2/21/11'}, {'Status': u'SIGNED', 'Rating': u'5.7', 'Name': u'Michael Richardson', 'Weight': u'228', 'Height': u'6\'2"', 'Location': u'DeSoto, TX', 'Position': u'DE', 'Commit Date': u'2/19/11'}, {'Status': u'SIGNED', 'Rating': u'5.6', 'Name': u'Tyrone Taylor', 'Weight': u'210', 'Height': u'6\'3"', 'Location': u'Galena Park, TX', 'Position': u'DE', 'Commit Date': u'12/19/10'}, {'Status': u'SIGNED', 'Rating': u'5.9', 'Name': u'DeVante Harris', 'Weight': u'160', 'Height': u'5\'11"', 'Location': u'Mesquite, TX', 'Position': u'DB', 'Commit Date': u'(No Date)'}]
+```
+
 4. `avgClassRating(player_data)`
 5. `teamRankings(year)`
