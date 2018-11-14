@@ -135,6 +135,36 @@ for player in final_class_data:
 {'Status': u'SIGNED', 'Rating': u'5.6', 'Name': u'Tyrone Taylor', 'Weight': u'210', 'Height': u'6\'3"', 'Location': u'Galena Park, TX', 'Position': u'DE', 'Commit Date': u'12/19/10'}
 {'Status': u'SIGNED', 'Rating': u'5.9', 'Name': u'DeVante Harris', 'Weight': u'160', 'Height': u'5\'11"', 'Location': u'Mesquite, TX', 'Position': u'DB', 'Commit Date': u'(No Date)'}
 ```
+And, by iterating the .iteritems() function, you can iterate through the actual dictionary and extract the data value you'd like based on the key. For instance:
+
+```
+for item in final_class_data:
+	for key, value in item.iteritems():
+		if key == "Name":
+			print value
+		else:
+			pass
+...
+Thomas Johnson
+Edmund Ray
+Polo Manukainiu
+Edward Pope
+Sabian Holmes
+Derel Walker
+Otis Jacobs
+Germain Ifedi
+Julien Obioha
+Kenneth Marshall
+Trey Williams
+Matt Davis
+Mike Matthews
+Alonzo Williams
+Kimo Tipoti
+Jordan Richmond
+Michael Richardson
+Tyrone Taylor
+DeVante Harris
+```
 
 4. `avgClassRating(player_data)`
 5. `teamRankings(year)`
