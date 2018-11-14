@@ -45,6 +45,23 @@ The CFBRecruit module relies heavily on Selenium 2.0, and specifically Selenium'
 
 #### Third - Install CFBRecruits
 
+#### But first, a brief word on WebDrivers:
+
+If you're familiar with Selenium, you may already know that you can use WebDrivers for basically any browser (Firefox, Chrome, Opera, etc.), and perhaps, Google Chrome isn't your browser of choice (which is what the CFBRecruits module utilizes). What you can do is [visit Selenium's WebDriver download page](https://selenium-python.readthedocs.io/installation.html#drivers), download the WebDriver of your choice, and then follow steps 3-6 from "Second - Install Selenium Google Chrome WebDriver" but for the WebDriver of your choice.
+
+Once you've done this--and this goes for any WebDriver--be sure to capture the exact file path of your WebDriver as you'll need it for Step 7 below:
+
+1. Open your Mac's terminal
+2. Copy and paste: `pip install CFBRecruits`
+3. Press enter/return
+4. Locate the file "CFBrecruits.py" on your machine
+5. Open "CFBrecruits.py"
+6. Search for "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
+7. Copy/paste the full file path for your Google Chrome WebDriver
+8. Save "CFBrecruits.py"
+
+*Note: If you choose to use a different browser WebDriver, you'll need to chose the proper WebDriver object. For instance, if you'd prefer to use Firefox, instead of "`webdriver.Chrome()`" you'll want to change each reference to a specific WebDriver to "`webdriver.Firefox()`".
+
 ### 3. Using CFBRecruits
 
 #### Classes
