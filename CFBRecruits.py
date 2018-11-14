@@ -37,7 +37,7 @@ class Scrape247(Scraper):
 		return url
 
 	def getClassData(self, url):
-		browser = webdriver.Chrome(<INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE>)
+		browser = webdriver.Chrome("INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE")
 
 		try:
 			browser.get(url)
@@ -73,7 +73,7 @@ class Scrape247(Scraper):
 		return round(average_rating, 2)
 
 	def teamRankings(self, year):
-		browser = webdriver.Chrome("/Users/yogermee/Documents/Coding/SeleniumDrivers/chromedriver")
+		browser = webdriver.Chrome("INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE")
 
 		url_prefix = "https://247sports.com/Season/"
 		url_suffix = "-Football/CompositeTeamRankings/"
@@ -112,7 +112,7 @@ class ScrapeRivals(Scraper):
 		return url
 
 	def getClassData(self, url):
-		browser = webdriver.Chrome("/Users/yogermee/Documents/Coding/SeleniumDrivers/chromedriver")
+		browser = webdriver.Chrome("INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE")
 		browser.get(url)
 		browser.implicitly_wait(30)
 
