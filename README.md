@@ -63,8 +63,14 @@ Once you've created your class instance, you're now ready to begin utilizing the
 
 Currently, each website's class has the following methods:
 
-1. `getClassURL(team, year)`
-2. `getClassData(url)`
+1. `getClassURL(team, year)` - Including the proper team name string (referenced in the appendix) and the desired year, this function will enable you to generate the proper URL to scrape without have to locate it on the website, copy it, and then paste it into any other methods.
+
+Example:
+
+`site = ScrapeRivals()
+ page = site.getClassURL('tamu', 2012)`
+
+2. `getClassData(url)` - 
 3. `buildClassData(data)`
 4. `avgClassRating(player_data)`
 5. `teamRankings(year)`
