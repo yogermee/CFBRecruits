@@ -45,7 +45,7 @@ The CFBRecruit module relies heavily on Selenium 2.0, and specifically Selenium'
 
 ### Third - Install CFBRecruits
 
-### But first, a brief word on WebDrivers:
+#### A brief moment on WebDrivers:
 
 If you're familiar with Selenium, you may already know that you can use WebDrivers for basically any browser (Firefox, Chrome, Opera, etc.), and perhaps, Google Chrome isn't your browser of choice (which is what the CFBRecruits module utilizes). What you can do is [visit Selenium's WebDriver download page](https://selenium-python.readthedocs.io/installation.html#drivers), download the WebDriver of your choice, and then follow steps 3-6 from "Second - Install Selenium Google Chrome WebDriver" but for the WebDriver of your choice.
 
