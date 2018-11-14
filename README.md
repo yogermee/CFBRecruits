@@ -67,8 +67,8 @@ Currently, each website's class has the following methods:
 
 Example:
 
-`site = ScrapeRivals()
- page = site.getClassURL('tamu', 2012)`
+```site = ScrapeRivals()
+page = site.getClassURL('tamu', 2012)```
 
 2. `getClassData(url)` - 
 3. `buildClassData(data)`
