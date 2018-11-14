@@ -13,9 +13,9 @@ The CFBRecruits module was created to gain access to NCAA football recruit data 
 
 **Currently, the CFBRecruits module will return the following data from both websites:**
 
-1) Complete university recruiting class data by year
-2) Average university recruit rating by year
-3) The Top 50 recruiting classes by university, by year
+1. Complete university recruiting class data by year
+2. Average university recruit rating by year
+3. The Top 50 recruiting classes by university, by year
 
 ### 2. Installation
 
@@ -23,7 +23,7 @@ The CFBRecruit module relies heavily on Selenium 2.0, and specifically Selenium'
 
 #### Installing Selenium
 
-Step 1: Open your Mac's terminal
+Step 1. Open your Mac's terminal
 Step 2: Copy this: pip install selenium
 Step 3: Press enter/return
 
