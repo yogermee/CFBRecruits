@@ -56,6 +56,10 @@ There are currently two classes in CFBRecruits--one for 247Sports.com and one fo
 
 In order to access all of the methods within each class, you'll first need to create an instance of the class for the website in question. For instance:
 
-`site = ScraperRivals()`
+`site = ScraperRivals()` or `site = Scraper247`
+
+Once you've created your class instance, you're now ready to begin utilizing the methods within each class.
+
+#### Utilizing CFBRecruit's methods
 
 
