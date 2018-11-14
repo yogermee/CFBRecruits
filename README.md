@@ -63,7 +63,7 @@ Once you've created your class instance, you're now ready to begin utilizing the
 
 Currently, each website's class has the following methods:
 
-1. `getClassURL(team, year)` - Including the proper team name string (referenced in the appendix) and the desired year, this function will enable you to generate the proper URL to scrape without have to locate it on the website, copy it, and then paste it into any other methods.
+1. `getClassURL(team, year)` - Including the proper team name string (please reference the appendix for all proper team name strings) and the desired year, this function will enable you to generate the proper URL string to pass into methods to then be scraped without having to manually locate it on the website, copy it, and then paste it into any other methods (which, will also work, if you so desire).
 
 *Example:*
 
@@ -76,7 +76,7 @@ print url
 https://tamu.rivals.com/commitments/football/2012
 ```
 
-2. `getClassData(url)` - 
+2. `getClassData(url)` - This method does all of the heavy lifting to scrape the URL in question and returns the initial data sets in a tuple (`(data_fields, team_player_data, index_iterator)`) that will later be massaged into more readable and iterable data objects.
 
 *Example:*
 
