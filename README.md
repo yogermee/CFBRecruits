@@ -50,4 +50,12 @@ The CFBRecruit module relies heavily on Selenium 2.0, and specifically Selenium'
 
 #### Classes
 
-There are currently two classes in CFBRecruits--one for 247Sports.com and one for Rivals.com--named `Scraper247()` and `ScraperRivals`, respectively. They are both children of the `Scraper()` parent class.
+There are currently two classes in CFBRecruits--one for 247Sports.com and one for Rivals.com--named `Scraper247()` and `ScraperRivals()`, respectively. They are both children of the `Scraper()` parent class.
+
+##### Creating a Class instance
+
+In order to access all of the methods within each class, you'll first need to create an instance of the class for the website in question. For instance:
+
+`site = ScraperRivals()'
+
+
