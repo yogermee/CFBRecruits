@@ -32,7 +32,7 @@ The CFBRecruit module relies heavily on Selenium 2.0, and specifically Selenium'
 #### First - Install Selenium
 
 1. Open your Mac's terminal
-2. Copy this: `pip install selenium`
+2. Copy and paste: `pip install selenium`
 3. Press enter/return
 
 #### Second - Install Selenium Google Chrome WebDriver
