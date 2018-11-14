@@ -48,3 +48,6 @@ The CFBRecruit module relies heavily on Selenium 2.0, and specifically Selenium'
 
 ### 3. Using CFBRecruits
 
+#### Classes
+
+There are currently two classes in CFBRecruits--one for 247Sports.com and one for Rivals.com--named `Scraper247()` and `ScraperRivals`, respectively. They are both children of the `Scraper()` parent class.
