@@ -6,6 +6,7 @@
 
 1. Introduction
 2. Installation
+3. Using CFBRecruits
 
 ### 1. Introduction
 
@@ -35,4 +36,6 @@ The CFBRecruit module relies heavily on Selenium 2.0, and specifically Selenium'
 4. Locate the downloaded .zip file
 5. Open the .zip file
 6. Move the "chromedriver" file to your desired folder/location--you'll need this exact file path later.
+
+### 3. Using CFBRecruits
 
