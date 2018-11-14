@@ -11,7 +11,14 @@
    - Install CFBRecruits
 3. Using CFBRecruits
    - Classes
-   - Methods
+     - Creating a Class instance
+   - Utilizing CFBRecruit's Methods
+     - `getClassURL(team, year)`
+     - `getClassData(url)`
+     - `buildClassData(data)`
+     - `avgClassRating(player_data)`
+     - `teamRankings(year)`
+     
 4. Appendix
 
 ## 1. Introduction
