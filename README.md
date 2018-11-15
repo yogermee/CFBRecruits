@@ -1,4 +1,4 @@
-# CFBRecruits (Python 2.7)
+# CFBRecruits *Beta* (written in Python 2.7)
 
 *Making NCAA football recruiting data as easily accessible as possible.*
 
@@ -204,4 +204,4 @@ print site.avgClassRating(final_class_data)
 5.73
 ```
 
-5. `teamRankings(year)`
+5. `teamRankings(year)` - 
