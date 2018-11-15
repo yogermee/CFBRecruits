@@ -61,27 +61,31 @@ Once you've done this--and this goes for any WebDriver--be sure to capture the e
 1. Open your Mac's terminal
 2. Copy and paste: `pip install CFBRecruits`
 3. Press enter/return
-4. Locate the file "CFBrecruits.py" on your machine
-5. Open "CFBrecruits.py"
-6. Search for "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
-7. Copy/paste the full file path for your Google Chrome WebDriver
-8. Save "CFBrecruits.py"
 
-*Note: If you choose to use a different browser WebDriver, you'll need to chose the proper WebDriver object. For instance, if you'd prefer to use Firefox, instead of "`webdriver.Chrome()`" you'll want to change each reference to a specific WebDriver to "`webdriver.Firefox()`".
+*Note: If you choose to use a different browser WebDriver, you'll need to chose the proper WebDriver object. For instance, if you'd prefer to use Firefox, instead of "`webdriver.Chrome()`" you'll want to change each reference to a specific WebDriver in "CFBRecruits.py" to "`webdriver.Firefox()`".
 
 ## 3. Using CFBRecruits
 
 ### Classes
 
-There are currently two classes in CFBRecruits--one for 247Sports.com and one for Rivals.com--named `Scrape247()` and `ScrapeRivals()`, respectively. They are both children of the `Scraper()` parent class.
+There are currently two classes in CFBRecruits--one for 247Sports.com and one for Rivals.com--named `Scrape247(path)` and `ScrapeRivals(path)`, respectively. They are both children of the `Scraper(path)` parent class.
 
 #### Creating a Class instance
+'Step zero', if you will, is establishing your Google Chrome WebDriver local file path as a variable to pass into either module.
+
+*Example:*
+
+```
+path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
+```
 
 In order to access all of the methods within each class, you'll first need to create an instance of the class for the website in question. For instance:
 
-`site = ScrapeRivals()` or `site = Scrape247()`
-
-Once you've created your class instance, you're now ready to begin utilizing the methods within each class.
+```
+path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
+site = ScrapeRivals(path)` # or `site = Scrape247(path)
+```
+Once you've created your path variable and class instance, you're now ready to begin utilizing the methods within each class.
 
 ### Utilizing CFBRecruit's methods
 
@@ -92,7 +96,8 @@ Currently, each website's class has the following methods:
 *Example:*
 
 ```
-site = ScrapeRivals()
+path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
+site = ScrapeRivals(path)
 url = site.getClassURL('tamu', 2012)
 
 print url
@@ -105,7 +110,8 @@ https://tamu.rivals.com/commitments/football/2012
 *Example:*
 
 ```
-site = ScrapeRivals()
+path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
+site = ScrapeRivals(path)
 url = site.getClassURL('tamu', 2012)
 class_data = site.getClassData(url)
 
@@ -119,7 +125,8 @@ print class_data
 *Example:*
 
 ```
-site = ScrapeRivals()
+path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
+site = ScrapeRivals(path)
 url = site.getClassURL('tamu', 2012)
 class_data = site.getClassData(url)
 final_class_data = site.buildClassData(class_data)
@@ -195,7 +202,8 @@ DeVante Harris
 *Example:*
 
 ```
-site = ScrapeRivals()
+path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
+site = ScrapeRivals(path)
 url = site.getClassURL('tamu', 2012)
 class_data = site.getClassData(url)
 final_class_data = site.buildClassData(class_data)
@@ -210,7 +218,8 @@ print site.avgClassRating(final_class_data)
 *Example:*
 
 ```
-site = ScrapeRivals()
+path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
+site = ScrapeRivals(path)
 
 print site.teamRankings(2012)
 ...
