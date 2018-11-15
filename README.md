@@ -58,9 +58,7 @@ If you're familiar with Selenium, you may already know that you can use WebDrive
 
 Once you've done this--and this goes for any WebDriver--be sure to capture the exact file path of your WebDriver as you'll need it for Step 7 below:
 
-1. Open your Mac's terminal
-2. Copy and paste: `pip install CFBRecruits`
-3. Press enter/return
+1. Download "CFBRecruits.py" from the CFBRecruits repository
 
 *Note: If you choose to use a different browser WebDriver, you'll need to chose the proper WebDriver object. For instance, if you'd prefer to use Firefox, instead of "`webdriver.Chrome()`" you'll want to change each reference to a specific WebDriver in "CFBRecruits.py" to "`webdriver.Firefox()`".
 
