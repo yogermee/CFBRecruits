@@ -96,7 +96,7 @@ In order to access all of the methods within each class, you'll first need to cr
 from CFBRecruits import ScrapeRivals, Scrape247
 ...
 path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
-site = ScrapeRivals(path)` # or `site = Scrape247(path)
+site = ScrapeRivals(path) #or site = Scrape247(path)
 ```
 Once you've created your path variable and class instance, you're now ready to begin utilizing the methods within each class.
 
