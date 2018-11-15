@@ -189,5 +189,19 @@ Tyrone Taylor
 DeVante Harris
 ```
 
-4. `avgClassRating(player_data)`
+4. `avgClassRating(player_data)` - This allows you to extract the average rating for the class at the URL you're querying, returning a simple float value denoting that average
+
+*Example:*
+
+```
+site = ScrapeRivals()
+url = site.getClassURL('tamu', 2012)
+class_data = site.getClassData(url)
+final_class_data = site.buildClassData(class_data)
+
+print site.avgClassRating(final_class_data)
+...
+5.73
+```
+
 5. `teamRankings(year)`
