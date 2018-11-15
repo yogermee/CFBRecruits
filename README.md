@@ -85,12 +85,16 @@ There are currently two classes in CFBRecruits--one for 247Sports.com and one fo
 *Example:*
 
 ```
+from CFBRecruits import ScrapeRivals, Scrape247
+...
 path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
 ```
 
 In order to access all of the methods within each class, you'll first need to create an instance of the class for the website in question. For instance:
 
 ```
+from CFBRecruits import ScrapeRivals, Scrape247
+...
 path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
 site = ScrapeRivals(path)` # or `site = Scrape247(path)
 ```
@@ -105,6 +109,8 @@ Currently, each website's class has the following methods:
 *Example:*
 
 ```
+from CFBRecruits import ScrapeRivals, Scrape247
+...
 path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
 site = ScrapeRivals(path)
 url = site.getClassURL('tamu', 2012)
@@ -119,6 +125,8 @@ https://tamu.rivals.com/commitments/football/2012
 *Example:*
 
 ```
+from CFBRecruits import ScrapeRivals, Scrape247
+...
 path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
 site = ScrapeRivals(path)
 url = site.getClassURL('tamu', 2012)
@@ -134,6 +142,8 @@ print class_data
 *Example:*
 
 ```
+from CFBRecruits import ScrapeRivals, Scrape247
+...
 path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
 site = ScrapeRivals(path)
 url = site.getClassURL('tamu', 2012)
@@ -147,6 +157,8 @@ print final_class_data
 The value returned is a list of dictionaries that can be easily iterated through. For example:
 
 ```
+from CFBRecruits import ScrapeRivals, Scrape247
+...
 site = ScrapeRivals()
 url = site.getClassURL('tamu', 2012)
 class_data = site.getClassData(url)
@@ -211,6 +223,8 @@ DeVante Harris
 *Example:*
 
 ```
+from CFBRecruits import ScrapeRivals, Scrape247
+...
 path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
 site = ScrapeRivals(path)
 url = site.getClassURL('tamu', 2012)
