@@ -10,6 +10,7 @@
    - Install Selenium Google Chrome WebDriver
    - Install CFBRecruits
 3. Using CFBRecruits
+   - Import the CFBRecruits module
    - Classes
      - Creating a Class instance
    - Utilizing CFBRecruit's Methods
@@ -50,7 +51,7 @@ The CFBRecruit module relies heavily on Selenium 2.0, and specifically Selenium'
 5. Open the .zip file
 6. Move the "chromedriver" file to your desired folder/location--you'll need this exact file path later.
 
-### Third - Install CFBRecruits
+### Third - Download CFBRecruits.py
 
 #### A brief moment on WebDrivers:
 
@@ -63,6 +64,16 @@ Once you've done this--and this goes for any WebDriver--be sure to capture the e
 *Note: If you choose to use a different browser WebDriver, you'll need to chose the proper WebDriver object. For instance, if you'd prefer to use Firefox, instead of "`webdriver.Chrome()`" you'll want to change each reference to a specific WebDriver in "CFBRecruits.py" to "`webdriver.Firefox()`".
 
 ## 3. Using CFBRecruits
+
+### Import the CFBRecruits module
+
+At the top your Python file, you'll need to import the CFBRecruits module into your file to be able to proper utilize the methods to retrieve recruit data. To make this as simple as possible, be sure that CFBRecruits.py resides in the same folder you'll use to store your code interacting with CFBRecruits.py.
+
+*Example:*
+
+```
+from CFBRecruits import ScrapeRivals, Scrape247
+```
 
 ### Classes
 
