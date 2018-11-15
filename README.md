@@ -5,6 +5,7 @@
 # Table of Contents
 
 1. Introduction
+2. Installation
    - Install Selenium
    - Install Selenium Google Chrome WebDriver
    - Install CFBRecruits
