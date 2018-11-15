@@ -7,10 +7,8 @@ import urllib
 import re
 
 class Scraper(object):
-	def __init__(self):
-		pass
-
-	path = "INSERT YOUR WEB DRIVER'S LOCAL FILE PATH HERE"
+	def __init__(self, path):
+		self.path = path
 
 	def buildPlayerDicts(self, data_fields, team_player_data, index_iterator):
 		player_data = []
@@ -39,8 +37,8 @@ class Scraper(object):
 		return round(average_rating, 2)
 
 class Scrape247(Scraper):
-	def __init__(self):
-		super(Scraper, self).__init__()
+	def __init__(self, path):
+		self.path = path
 
 	def getClassURL(self, team, year):
 		url_prefix = "https://247sports.com/college/"
@@ -104,8 +102,8 @@ class Scrape247(Scraper):
 		return team_data
 
 class ScrapeRivals(Scraper):
-	def __init__(self):
-		super(Scraper, self).__init__()
+	def __init__(self, path):
+		self.path = path
 
 	def getClassURL(self, team, year):
 		url = "https://" + team + ".rivals.com/commitments/football/" + str(year)
