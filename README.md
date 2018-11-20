@@ -21,6 +21,7 @@
      - `teamRankings(year)`
      
 4. Appendix
+   - Rivals.com team string list
 
 ## 1. Introduction
 
@@ -251,7 +252,7 @@ print site.teamRankings(2012)
 
 ## 4. Appendix
 
-### Rivals.com Team List:
+### Rivals.com Team String List:
 
 For use in functions such as `site.getClassURL('tamu', 2012)`:
 
