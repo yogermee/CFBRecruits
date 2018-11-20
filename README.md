@@ -254,7 +254,7 @@ print site.teamRankings(2012)
 
 ### Rivals.com Team String List:
 
-For use in functions such as `site.getClassURL('tamu', 2012)`, where `'tamu'` is the team string value. Simply replace `'tamu'` with the team of your choice below::
+For use in functions such as `site.getClassURL('tamu', 2012)`, where `'tamu'` is the team string value. Simply replace `'tamu'` with the team of your choice below:
 
 ```
 alabama
